@@ -3,8 +3,6 @@ from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 import time
 import os
-from dotenv import load_dotenv
-load_dotenv()
 
 # Page configuration
 st.set_page_config(
@@ -517,7 +515,7 @@ if prompt:
                 try:
                     # Initialize the model with current temperature
                     llm = ChatGroq(
-                        api_key=os.getenv("GROQ_API_KEY"),
+                        api_key=st.secrets["GROQ_API_KEY"],
                         model="llama3-8b-8192",
                         temperature=temperature
                     )
