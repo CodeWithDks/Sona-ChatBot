@@ -845,10 +845,5 @@ I'm here to help once the connection is restored! 😊"""
 
 # Footer
 st.markdown("""
-<div class="footer">
-    <h3>🚀 Powered by Advanced AI Technology</h3>
-    <p>🧠 Groq & LangChain | 🎨 Built with Streamlit</p>
-    <p>💡 Empowering students to learn, grow, and succeed</p>
-    <p>🌟 Made with ❤️ for education</p>
-</div>
+
 """, unsafe_allow_html=True)
